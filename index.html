@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إذا مفهمتش انت بهيم</title>
+<style>
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 22px; color: #222; line-height: 1.7; }
+h1 { text-align: center; margin-bottom: 8px; }
+.intro { text-align: center; color: #555; margin: 0 0 18px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #888; padding: 10px 12px; vertical-align: top; text-align: left; }
+th { background: #e8eef5; }
+th:first-child, td:first-child { width: 30%; }
+td:first-child { direction: ltr; font-weight: bold; }
+.ar { direction: rtl; text-align: right; margin-top: 5px; }
+.fr { text-align: left; }
+tr:nth-child(even) { background: #f7f7f7; }
+.note { background: #fff8df; border: 1px solid #e2d39b; padding: 12px; border-radius: 8px; margin: 16px 0; }
+@media print { body { margin: 10mm; } }
+</style>
+</head>
+<body>
+<h1>إذا مفهمتش انت بهيم</h1>
+<p class="intro">Tableau très simple des éléments HTML et CSS — شرح سهل بالفرنسية والعربية</p>
+<div class="note">
+<b>À retenir / تذكّر:</b>
+<br>HTML sert à créer le contenu de la page. — HTML يُستعمل لإنشاء محتوى الصفحة.
+<br>CSS sert à changer l'apparence de la page. — CSS يُستعمل لتغيير شكل الصفحة.
+</div>
+<table>
+<thead><tr><th>Élément / العنصر</th><th>Explication très simple / شرح مبسّط</th></tr></thead>
+<tbody>
+<tr><td><code>&lt;h1&gt;</code></td><td><div class='fr'><b>Français :</b> Affiche le titre principal de la page.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعرض العنوان الرئيسي للصفحة.</div></td></tr>
+<tr><td><code>&lt;h3&gt;</code></td><td><div class='fr'><b>Français :</b> Affiche un titre de niveau 3, pour un sous-titre.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعرض عنوانًا فرعيًا من المستوى الثالث.</div></td></tr>
+<tr><td><code>&lt;p&gt;</code></td><td><div class='fr'><b>Français :</b> Écrit un paragraphe.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يكتب فقرة نصية.</div></td></tr>
+<tr><td><code>&lt;mark&gt;</code></td><td><div class='fr'><b>Français :</b> Surligne un texte.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يُظلّل نصًا لإبرازه.</div></td></tr>
+<tr><td><code>&lt;br&gt;</code></td><td><div class='fr'><b>Français :</b> Passe à la ligne.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينتقل إلى سطر جديد.</div></td></tr>
+<tr><td><code>&lt;div&gt;</code></td><td><div class='fr'><b>Français :</b> Regroupe plusieurs éléments dans un bloc.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجمع عدة عناصر داخل كتلة واحدة.</div></td></tr>
+<tr><td><code>&lt;header&gt;</code></td><td><div class='fr'><b>Français :</b> Crée l&#x27;en-tête d&#x27;une page ou d&#x27;une section.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ رأس الصفحة أو القسم.</div></td></tr>
+<tr><td><code>&lt;nav&gt;</code></td><td><div class='fr'><b>Français :</b> Regroupe les liens de navigation.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجمع روابط التنقل بين الصفحات.</div></td></tr>
+<tr><td><code>&lt;section&gt;</code></td><td><div class='fr'><b>Français :</b> Regroupe des éléments qui parlent du même sujet.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجمع عناصر تتحدث عن الموضوع نفسه.</div></td></tr>
+<tr><td><code>&lt;main&gt;</code></td><td><div class='fr'><b>Français :</b> Contient le contenu principal de la page.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحتوي على المحتوى الأساسي للصفحة.</div></td></tr>
+<tr><td><code>&lt;footer&gt;</code></td><td><div class='fr'><b>Français :</b> Crée le bas de la page.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ الجزء السفلي من الصفحة.</div></td></tr>
+<tr><td><code>&lt;a href=&quot;page.html&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Crée un lien vers une autre page. `href` indique la destination.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ رابطًا لصفحة أخرى. و`href` يحدد الصفحة المطلوبة.</div></td></tr>
+<tr><td><code>target=&quot;if&quot;</code></td><td><div class='fr'><b>Français :</b> Ouvre le lien dans l&#x27;iframe qui porte `name=&quot;if&quot;`.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يفتح الرابط داخل إطار iframe الذي يحمل الاسم `if`.</div></td></tr>
+<tr><td><code>&lt;iframe src=&quot;page.html&quot; name=&quot;if&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Affiche une page à l&#x27;intérieur de la page actuelle. `src` indique la page et `name` donne un nom à l&#x27;iframe.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعرض صفحة داخل الصفحة الحالية. `src` يحدد الصفحة و`name` يعطي إطار iframe اسمًا.</div></td></tr>
+<tr><td><code>&lt;table&gt;</code></td><td><div class='fr'><b>Français :</b> Crée un tableau.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ جدولًا.</div></td></tr>
+<tr><td><code>&lt;caption&gt;</code></td><td><div class='fr'><b>Français :</b> Ajoute un titre au tableau.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يضيف عنوانًا للجدول.</div></td></tr>
+<tr><td><code>&lt;thead&gt;</code></td><td><div class='fr'><b>Français :</b> Regroupe l&#x27;en-tête du tableau.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجمع رأس الجدول الذي يحتوي عادةً على عناوين الأعمدة.</div></td></tr>
+<tr><td><code>&lt;tbody&gt;</code></td><td><div class='fr'><b>Français :</b> Regroupe les lignes contenant les données.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجمع الأسطر التي تحتوي على البيانات.</div></td></tr>
+<tr><td><code>&lt;tfoot&gt;</code></td><td><div class='fr'><b>Français :</b> Regroupe la partie finale du tableau, par exemple un total.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجمع الجزء الأخير من الجدول، مثل المجموع.</div></td></tr>
+<tr><td><code>&lt;tr&gt;</code></td><td><div class='fr'><b>Français :</b> Crée une ligne du tableau.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ سطرًا في الجدول.</div></td></tr>
+<tr><td><code>&lt;th&gt;</code></td><td><div class='fr'><b>Français :</b> Crée une cellule de titre dans le tableau.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ خلية عنوان في الجدول.</div></td></tr>
+<tr><td><code>&lt;td&gt;</code></td><td><div class='fr'><b>Français :</b> Crée une cellule normale du tableau.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ خلية عادية في الجدول.</div></td></tr>
+<tr><td><code>border=&quot;2&quot;</code></td><td><div class='fr'><b>Français :</b> Ajoute une bordure au tableau. En CSS, on préfère `border`.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يضيف إطارًا للجدول. وفي CSS نستعمل عادةً `border`.</div></td></tr>
+<tr><td><code>&lt;ol&gt;</code></td><td><div class='fr'><b>Français :</b> Crée une liste numérotée.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ قائمة مرتبة بالأرقام.</div></td></tr>
+<tr><td><code>type=&quot;I&quot;</code></td><td><div class='fr'><b>Français :</b> Dans `&lt;ol&gt;`, utilise les chiffres romains : I, II, III…</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> مع `&lt;ol&gt;` يستعمل الأرقام الرومانية: I وII وIII…</div></td></tr>
+<tr><td><code>start=&quot;5&quot;</code></td><td><div class='fr'><b>Français :</b> Fait commencer la liste au numéro 5.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجعل القائمة تبدأ بالرقم 5.</div></td></tr>
+<tr><td><code>reversed</code></td><td><div class='fr'><b>Français :</b> Affiche les numéros dans l&#x27;ordre décroissant.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعرض أرقام القائمة تنازليًا.</div></td></tr>
+<tr><td><code>&lt;ul&gt;</code></td><td><div class='fr'><b>Français :</b> Crée une liste avec des puces.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ قائمة بعلامات نقطية.</div></td></tr>
+<tr><td><code>type=&quot;circle&quot;</code></td><td><div class='fr'><b>Français :</b> Utilise des cercles vides comme puces.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يستعمل دوائر فارغة كعلامات للقائمة.</div></td></tr>
+<tr><td><code>&lt;li&gt;</code></td><td><div class='fr'><b>Français :</b> Crée un élément d&#x27;une liste.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ عنصرًا داخل القائمة.</div></td></tr>
+<tr><td><code>&lt;details&gt;</code></td><td><div class='fr'><b>Français :</b> Crée une zone que l&#x27;on peut ouvrir et fermer.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ مساحة يمكن فتحها وإغلاقها لإظهار أو إخفاء المعلومات.</div></td></tr>
+<tr><td><code>&lt;summary&gt;</code></td><td><div class='fr'><b>Français :</b> Crée le titre cliquable de `&lt;details&gt;`.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ العنوان الذي نضغط عليه داخل `&lt;details&gt;`.</div></td></tr>
+<tr><td><code>&lt;img src=&quot;...&quot; alt=&quot;...&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Affiche une image. `src` indique le fichier et `alt` donne un texte si l&#x27;image ne s&#x27;affiche pas.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعرض صورة. `src` يحدد ملف الصورة و`alt` يقدم نصًا بديلًا إذا لم تظهر.</div></td></tr>
+<tr><td><code>&lt;figcaption&gt;</code></td><td><div class='fr'><b>Français :</b> Ajoute une légende à une image.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يضيف وصفًا أو تعليقًا أسفل الصورة.</div></td></tr>
+<tr><td><code>&lt;video controls src=&quot;...&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Affiche une vidéo. `controls` montre les boutons lecture, pause et volume.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعرض فيديو. و`controls` يُظهر أزرار التشغيل والإيقاف والصوت.</div></td></tr>
+<tr><td><code>&lt;audio controls src=&quot;...&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Permet d&#x27;écouter un fichier audio avec des commandes.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يسمح بتشغيل ملف صوتي مع أزرار التحكم.</div></td></tr>
+<tr><td><code>&lt;form&gt;</code></td><td><div class='fr'><b>Français :</b> Crée un formulaire pour saisir et envoyer des informations.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ استمارة لإدخال المعلومات وإرسالها.</div></td></tr>
+<tr><td><code>action=&quot;...&quot;</code></td><td><div class='fr'><b>Français :</b> Indique où envoyer les données du formulaire.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحدد الصفحة التي تُرسل إليها بيانات الاستمارة.</div></td></tr>
+<tr><td><code>method=&quot;get&quot;</code></td><td><div class='fr'><b>Français :</b> Envoie les données dans l&#x27;adresse URL.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يرسل البيانات ضمن رابط الصفحة (URL).</div></td></tr>
+<tr><td><code>&lt;label for=&quot;nom&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Affiche le nom d&#x27;un champ. `for` doit correspondre à l&#x27;`id` du champ.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعرض اسم خانة الإدخال. يجب أن تتطابق قيمة `for` مع `id` الخاص بالخانة.</div></td></tr>
+<tr><td><code>&lt;input type=&quot;text&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Crée une case pour écrire du texte.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ خانة لكتابة نص.</div></td></tr>
+<tr><td><code>&lt;input type=&quot;number&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Crée une case pour saisir un nombre.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ خانة لإدخال رقم.</div></td></tr>
+<tr><td><code>min=&quot;1&quot; et max=&quot;5&quot;</code></td><td><div class='fr'><b>Français :</b> Fixent la valeur minimale et la valeur maximale.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحددان أصغر قيمة وأكبر قيمة مسموحتين.</div></td></tr>
+<tr><td><code>required</code></td><td><div class='fr'><b>Français :</b> Rend le champ obligatoire.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجعل ملء الخانة إجباريًا.</div></td></tr>
+<tr><td><code>placeholder=&quot;nom?&quot;</code></td><td><div class='fr'><b>Français :</b> Affiche un petit texte indicatif dans le champ.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعرض نصًا إرشاديًا داخل خانة الإدخال.</div></td></tr>
+<tr><td><code>id=&quot;...&quot;</code></td><td><div class='fr'><b>Français :</b> Donne un identifiant unique à un élément.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعطي العنصر معرّفًا خاصًا به.</div></td></tr>
+<tr><td><code>name=&quot;...&quot;</code></td><td><div class='fr'><b>Français :</b> Donne un nom au champ, utilisé lors de l&#x27;envoi du formulaire.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعطي خانة الإدخال اسمًا يُستعمل عند إرسال البيانات.</div></td></tr>
+<tr><td><code>&lt;input type=&quot;date&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Permet de choisir une date.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يسمح باختيار تاريخ.</div></td></tr>
+<tr><td><code>&lt;input type=&quot;radio&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Permet de choisir une seule réponse dans un groupe de boutons ayant le même `name`.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يسمح باختيار إجابة واحدة من مجموعة أزرار لها `name` نفسه.</div></td></tr>
+<tr><td><code>&lt;input type=&quot;checkbox&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Permet de cocher plusieurs choix.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يسمح باختيار عدة إجابات.</div></td></tr>
+<tr><td><code>&lt;input type=&quot;submit&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Crée un bouton pour envoyer le formulaire.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ زرًا لإرسال الاستمارة.</div></td></tr>
+<tr><td><code>&lt;input type=&quot;reset&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Remet les champs à leurs valeurs initiales.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعيد خانات الاستمارة إلى حالتها الأولى.</div></td></tr>
+<tr><td><code>&lt;select&gt;</code></td><td><div class='fr'><b>Français :</b> Crée une liste déroulante.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ قائمة منسدلة.</div></td></tr>
+<tr><td><code>&lt;option value=&quot;...&quot;&gt;</code></td><td><div class='fr'><b>Français :</b> Ajoute un choix dans la liste déroulante.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يضيف اختيارًا داخل القائمة المنسدلة.</div></td></tr>
+<tr><td><code>&lt;textarea&gt;</code></td><td><div class='fr'><b>Français :</b> Crée une grande zone pour écrire plusieurs lignes.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ مساحة كبيرة لكتابة عدة أسطر.</div></td></tr>
+<tr><td><code>rows=&quot;5&quot;</code></td><td><div class='fr'><b>Français :</b> Définit le nombre de lignes visibles dans `&lt;textarea&gt;`.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحدد عدد الأسطر الظاهرة في `&lt;textarea&gt;`.</div></td></tr>
+<tr><td><code>&lt;fieldset&gt;</code></td><td><div class='fr'><b>Français :</b> Regroupe des champs du formulaire dans un cadre.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجمع خانات الاستمارة داخل إطار.</div></td></tr>
+<tr><td><code>&lt;legend&gt;</code></td><td><div class='fr'><b>Français :</b> Donne un titre au cadre `&lt;fieldset&gt;`.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعطي عنوانًا للإطار `&lt;fieldset&gt;`.</div></td></tr>
+<tr><td><code>&lt;button&gt;</code></td><td><div class='fr'><b>Français :</b> Crée un bouton cliquable.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينشئ زرًا يمكن الضغط عليه.</div></td></tr>
+<tr><td><code>onload=&quot;...&quot;</code></td><td><div class='fr'><b>Français :</b> Exécute une action JavaScript quand la page est chargée.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينفذ أمر JavaScript عند تحميل الصفحة.</div></td></tr>
+<tr><td><code>onfocus=&quot;...&quot;</code></td><td><div class='fr'><b>Français :</b> Exécute une action quand on entre dans un champ.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينفذ أمرًا عندما نضغط داخل خانة الإدخال أو ن&#x27;y accède.</div></td></tr>
+<tr><td><code>onblur=&quot;...&quot;</code></td><td><div class='fr'><b>Français :</b> Exécute une action quand on quitte un champ.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> ينفذ أمرًا عندما نغادر خانة الإدخال.</div></td></tr>
+<tr><td><code>alert(&#x27;...&#x27;)</code></td><td><div class='fr'><b>Français :</b> Affiche une petite fenêtre avec un message.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يعرض نافذة صغيرة تحتوي على رسالة.</div></td></tr>
+<tr><td><code>style=&quot;...&quot;</code></td><td><div class='fr'><b>Français :</b> Permet d&#x27;écrire du CSS directement dans une balise HTML.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يسمح بكتابة أوامر CSS مباشرة داخل وسم HTML.</div></td></tr>
+<tr><td><code>background-color</code></td><td><div class='fr'><b>Français :</b> Change la couleur de fond.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يغير لون الخلفية.</div></td></tr>
+<tr><td><code>color</code></td><td><div class='fr'><b>Français :</b> Change la couleur du texte.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يغير لون الكتابة.</div></td></tr>
+<tr><td><code>width</code></td><td><div class='fr'><b>Français :</b> Définit la largeur.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحدد العرض.</div></td></tr>
+<tr><td><code>height</code></td><td><div class='fr'><b>Français :</b> Définit la hauteur.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحدد الارتفاع.</div></td></tr>
+<tr><td><code>margin</code></td><td><div class='fr'><b>Français :</b> Ajoute un espace à l&#x27;extérieur de l&#x27;élément.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يضيف مسافة خارج العنصر.</div></td></tr>
+<tr><td><code>padding</code></td><td><div class='fr'><b>Français :</b> Ajoute un espace entre le contenu et la bordure.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يضيف مسافة داخلية بين المحتوى والإطار.</div></td></tr>
+<tr><td><code>text-align: center</code></td><td><div class='fr'><b>Français :</b> Centre le texte horizontalement.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجعل النص في الوسط أفقيًا.</div></td></tr>
+<tr><td><code>border</code></td><td><div class='fr'><b>Français :</b> Ajoute un cadre autour de l&#x27;élément.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يضيف إطارًا حول العنصر.</div></td></tr>
+<tr><td><code>border-radius</code></td><td><div class='fr'><b>Français :</b> Arrondit les coins du cadre.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجعل زوايا الإطار مستديرة.</div></td></tr>
+<tr><td><code>display: inline-block</code></td><td><div class='fr'><b>Français :</b> Place l&#x27;élément sur la même ligne tout en permettant de régler sa largeur et sa hauteur.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يجعل العنصر في نفس السطر مع إمكانية تحديد عرضه وارتفاعه.</div></td></tr>
+<tr><td><code>position: static</code></td><td><div class='fr'><b>Français :</b> Position normale par défaut. `top`, `left`, etc. ne le déplacent pas.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> الوضع العادي والافتراضي. لا تحركه خصائص `top` و`left` وغيرها.</div></td></tr>
+<tr><td><code>position: relative</code></td><td><div class='fr'><b>Français :</b> Déplace l&#x27;élément par rapport à sa place d&#x27;origine, qui reste réservée.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحرك العنصر انطلاقًا من مكانه الأصلي، مع بقاء مكانه محجوزًا.</div></td></tr>
+<tr><td><code>position: absolute</code></td><td><div class='fr'><b>Français :</b> Place l&#x27;élément par rapport au parent positionné le plus proche. Il ne garde pas son espace initial.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يضع العنصر بالنسبة إلى أقرب عنصر أب له موضع محدد. ولا يبقى مكانه الأصلي محجوزًا.</div></td></tr>
+<tr><td><code>position: fixed</code></td><td><div class='fr'><b>Français :</b> Fixe l&#x27;élément à l&#x27;écran : il reste au même endroit pendant le défilement.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يثبت العنصر على الشاشة ويبقى في مكانه عند تمرير الصفحة.</div></td></tr>
+<tr><td><code>position: sticky</code></td><td><div class='fr'><b>Français :</b> L&#x27;élément défile normalement puis reste collé quand il atteint la position définie.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يتحرك العنصر عاديًا مع الصفحة، ثم يلتصق عند وصوله إلى الموضع المحدد.</div></td></tr>
+<tr><td><code>top</code></td><td><div class='fr'><b>Français :</b> Définit la distance depuis le haut.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحدد المسافة من الأعلى.</div></td></tr>
+<tr><td><code>right</code></td><td><div class='fr'><b>Français :</b> Définit la distance depuis la droite.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحدد المسافة من اليمين.</div></td></tr>
+<tr><td><code>bottom</code></td><td><div class='fr'><b>Français :</b> Définit la distance depuis le bas.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحدد المسافة من الأسفل.</div></td></tr>
+<tr><td><code>left</code></td><td><div class='fr'><b>Français :</b> Définit la distance depuis la gauche.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحدد المسافة من اليسار.</div></td></tr>
+<tr><td><code>.parent</code></td><td><div class='fr'><b>Français :</b> Sélectionne les éléments qui ont `class=&quot;parent&quot;`.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يختار العناصر التي تحمل `class=&quot;parent&quot;`.</div></td></tr>
+<tr><td><code>#message ou #msg</code></td><td><div class='fr'><b>Français :</b> Sélectionne l&#x27;élément qui a l&#x27;identifiant correspondant (`id`).</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يختار العنصر الذي يحمل المعرّف المطابق `id`.</div></td></tr>
+<tr><td><code>.parent div</code></td><td><div class='fr'><b>Français :</b> Sélectionne les `div` qui se trouvent dans `.parent`.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يختار عناصر `div` الموجودة داخل العنصر ذي الصنف `.parent`.</div></td></tr>
+<tr><td><code>form div</code></td><td><div class='fr'><b>Français :</b> Sélectionne les `div` qui se trouvent dans un formulaire.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يختار عناصر `div` الموجودة داخل الاستمارة.</div></td></tr>
+<tr><td><code>form label</code></td><td><div class='fr'><b>Français :</b> Sélectionne les `label` qui se trouvent dans un formulaire.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يختار عناصر `label` الموجودة داخل الاستمارة.</div></td></tr>
+<tr><td><code>input[type=&quot;text&quot;]</code></td><td><div class='fr'><b>Français :</b> Sélectionne seulement les champs `input` de type `text`.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يختار فقط خانات `input` التي نوعها `text`.</div></td></tr>
+<tr><td><code>rgb(...)</code></td><td><div class='fr'><b>Français :</b> Définit une couleur avec rouge, vert et bleu.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحدد لونًا باستعمال الأحمر والأخضر والأزرق.</div></td></tr>
+<tr><td><code>rgba(...)</code></td><td><div class='fr'><b>Français :</b> Définit une couleur avec rouge, vert, bleu et transparence.</div><div class='ar' lang='ar' dir='rtl'><b>العربية:</b> يحدد لونًا باستعمال الأحمر والأخضر والأزرق ودرجة الشفافية.</div></td></tr>
+</tbody>
+</table>
+</body>
+</html>
